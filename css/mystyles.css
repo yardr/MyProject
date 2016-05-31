@@ -1,0 +1,16 @@
+#navigate {
+    display: block;
+    margin: auto;
+}
+
+#navigate ul {
+    list-style: none;
+}
+
+#navigate li {
+    width: 50px;
+    border: 1px white;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+}
