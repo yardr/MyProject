@@ -1,16 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#page1 {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-image: url(../images/page1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page2 {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-image: url(../images/page2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#head {
+    position: absolute;
+    width: 200px;
+    right: 30px;
+    padding: 5px;
+    color: white;
+}
 #navigate {
-    display: block;
+    position: fixed;
+    left: 35%;
     margin: auto;
+    width: 30%;
+    height: 80px;
+    padding: 5px;
+    top:20px;
+    z-index: 1;
 }
 
 #navigate ul {
     list-style: none;
+    display: block;
+    
 }
 
-#navigate li {
-    width: 50px;
-    border: 1px white;
+#navigate ul li{
+    float: left;
+    width: 120px;
+}
+
+#navigate a {
+    display: block;
+    margin-left: 5px;
+    padding: 10px;
+    width: 65px;
+    height: 65px;
+    line-height:65px;
     border-radius: 50%;
-    background-color: green;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
     color: white;
+    border: 1px white;
+    outline-color: green;
+    box-shadow:inset 0px 0px 0px 5px white;
+    transition: width 0.5s, height 0.5s;
+    -webkit-transition: width 1s, height 1s;
+    -moz-transition: width 1s, height 1s;
+}
+#navigate a:hover {
+    width: 75px;
+    height: 75px;
+}
+#but1 {
+    background-color: #0066ff;
+}
+#but2 {
+    background-color: #ffcc00;
+}
+#but3 {
+    background-color: #660066;
 }

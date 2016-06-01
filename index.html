@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>MyLifeBlog</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/mystyles.css">
     </head>
     <body>
         <div id="navigate">
             <ul>
-                <li><a href="#lifestyle">LifeStyle</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#lifestyle" id="but1">LifeStyle</a></li>
+                <li><a href="#gallery" id="but2">Gallery</a></li>
+                <li><a href="#contacts" id="but3">Contacts</a></li>
+            </ul>
         </div>
+        <div id="page1">
+            <a id="lifestyle" class="smooth"></a>
+        <div id="head">
+            <h1>Wind Vertigo</h1>            
+        </div>
+        </div>
+        <div id="page2">
+            <a id="gallery" class="smooth"></a>
+            
+        </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+    
+    return false;
+});
+</script>
     </body>
 </html>
