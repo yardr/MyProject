@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
 }
+p {
+    font-family: Arial, sans-serif;
+}
 #page1 {
     position: relative;
     width: 100%;
@@ -21,34 +24,48 @@ body {
 }
 #head {
     position: absolute;
-    width: 200px;
+    width: 250px;
     right: 30px;
     padding: 5px;
     color: white;
+}
+
+#head:hover {
+    letter-spacing: 2px;
+    transition: 1s;
+    cursor: default;
 }
 #navigate {
     position: fixed;
     left: 35%;
     margin: auto;
-    width: 30%;
-    height: 80px;
+    width: 410px;
+    height: 100px;
     padding: 5px;
     top:20px;
     z-index: 1;
 }
-
 #navigate ul {
+    margin: 0px;
+    display: block;
+    padding: 0px;
+    width: 410px;
+    height: 95px;
+}
+
+
+
+#navigate ul li{
     list-style: none;
     display: block;
+    float: left;
+    width: 90px;
+    padding: 5px;
     
 }
 
-#navigate ul li{
-    float: left;
-    width: 120px;
-}
-
 #navigate a {
+    position: relative;
     display: block;
     margin-left: 5px;
     padding: 10px;
@@ -80,3 +97,19 @@ body {
 #but3 {
     background-color: #660066;
 }
+#but4 {
+    background-color: #009933;
+}
+
+#page1 article {
+    position: absolute;
+    left: 35%;
+    margin: auto;
+    top: 300px;
+    width: 300px;
+    line-height: 1.5;
+    color: white;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
