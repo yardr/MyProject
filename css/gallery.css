@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Cookie|Lobster+Two|Yanone+Kaffeesatz);
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+#brand {
+    color:#000;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.5em;
+}
+
+#brand:hover {
+    color:#4d88ff;
+    cursor:default;
+    transition: 0.5s;
+}
+
+.crop-img {
+    width: 100%;
+    max-height: 150px;
+}
+
+#gallery {
+    position: relative;
+    top: 70px;
+}
+
+#myNavi {
+    background-color: #c2c2a3;
+}

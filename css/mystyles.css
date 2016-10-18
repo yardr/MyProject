@@ -1,122 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Cookie|Lobster+Two|Yanone+Kaffeesatz);
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans';
 * {
     box-sizing: border-box;
 }
 body {
+    font-size: 100%;
     margin: 0;
     padding: 0;
+    background-image: url(../images/background_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 p {
     font-family: Arial, sans-serif;
 }
-#page1 {
-    position: relative;
-    width: 100%;
-    height: 1000px;
-    background-image: url(../images/page1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+/*navigation*/
+#myNavi {
+    background-color: #c2c2a3;
 }
 
-#page2 {
-    position: relative;
-    width: 100%;
-    height: 1000px;
-    background-image: url(../images/page2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#myNavbar {
+    overflow: hidden;
+    height: 220px;
 }
-#head {
-    position: absolute;
+
+#brand {
+    color:#000;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.5em;
+}
+
+#brand:hover {
+    color:#4d88ff;
+    cursor:default;
+    transition: 0.5s;
+}
+
+#finder {
+    position:relative;
+    top:9px;
+    left: 10px;
+}
+
+#cityInput {
+    width: 200px;
+}
+
+/*geolocation data*/
+#weathNow {
+    position: relative;
+    top:60px;
+}
+/*table decoration*/
+#table_wrap {
+    position: relative;
     width: 250px;
-    right: 30px;
-    padding: 5px;
-    color: white;
+    height: 180px;
+    margin-left: 40%;
+    margin-top: 10%;
+    background-color: #737373;
+    text-align: center;
+    border-radius: 5px;
 }
-
-#head:hover {
-    letter-spacing: 2px;
-    transition: 1s;
-    cursor: default;
-}
-
-/*меню*/
-#navigate {
-    position: fixed;
-    left: 35%;
+#weath_tab {
+    position: relative;
+    top: 10px;
+    border-collapse: collapse;
+    width: 220px;
+    font-family: 'Droid Sans', sans-serif;
     margin: auto;
-    width: 40%;
-    height: 100px;
-    padding: 5px;
-    top:20px;
-    z-index: 1;
-}
-#navigate ul {
-    margin: 0px;
-    padding: 0px;
-    display: block;
-    width: 100%;
-    height: 90px;
 }
 
-
-
-#navigate li{
-    list-style: none;
-    display: block;
-    float: left;
-    width: 15%;
-    margin-left: 5px;
-    padding: 5px;
-    height: 90px;
+.frow {
+    border-style: solid;
+    border-width: thin;
+    border-left: 1px;
+    border-top: none;
+    border-bottom: none;
+    border-color: #d9d9d9;
+    font-size: 1.2em;
+    font-weight: bold;
     
 }
 
-#navigate a {
-    position: relative;
-    display: block;
-    width: 72px;
-    height: 72px;
-    padding: 2px;
-    line-height:72px;
-    border-radius: 50%;
-    text-decoration: none;
+#weath_tab th {
     text-align: center;
-    font-size: 16px;
-    color: white;
-    border: 1px white;
-    outline-color: green;
-    box-shadow:inset 0px 0px 0px 5px white;
-    transition: width 0.3s, height 0.3s;
-    -webkit-transition: width 0.5s, height 0.5s;
-    -moz-transition: width 0.3s, height 0.3s;
-}
-#navigate a:hover {
-    width: 75px;
-    height: 75px;
-}
-#but1 {
-    background-color: #0066ff;
-}
-#but2 {
-    background-color: #ffcc00;
-}
-#but3 {
-    background-color: #660066;
-}
-#but4 {
-    background-color: #009933;
 }
 
-#page1 article {
+#weath_tab td {
+    text-align: center;
+    border-bottom: 1px solid;
+    border-color: #d9d9d9;
+}
+
+#city2 {
+    color: #ff6600;
+}
+
+/*Align the button at the bottom of the parent <div>*/
+#btn_drop {
     position: absolute;
-    left: 35%;
-    margin: auto;
-    top: 300px;
-    width: 300px;
-    line-height: 1.5;
-    color: white;
-    font-style: italic;
-    font-size: 1.2em;
+    left:0;
+    bottom: 0;
 }
 
+/*Collapsible weathertab for 5 days*/
+#weather_tab {
+    background-color: #737373 ;
+}
