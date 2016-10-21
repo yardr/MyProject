@@ -1,0 +1,1 @@
+# WeatherFriend project
